@@ -22,6 +22,26 @@ output "AMIName" {
   value = data.aws_ami.ami-name.id
 }
 
+
+data "aws_security_group" "sg-name"{
+    tags = {
+        "name" = "sg-nginx"
+    }
+}
+
+output "SecurityGroup" {
+  value = data.aws_security_group.sg-name.id
+}
+
+data "aws_caller_identity" "caller_identity"{
+}
+
+output "caller_identity_info"{
+    value = data.aws_caller_identity.caller_identity
+}
+
+
+
 # resource "aws_instance" "tikitu" {
   
 #     ami           = "ami-042b4708b1d05f512" # Example AMI ID, replace with a valid one for your region
