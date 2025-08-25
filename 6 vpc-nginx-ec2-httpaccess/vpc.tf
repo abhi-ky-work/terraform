@@ -1,15 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "6.8.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = "eu-north-1"
-}
 
 # VPC resource 
 resource "aws_vpc" "tikitu-vpc" {
@@ -58,4 +46,3 @@ resource "aws_route_table_association" "tikitu-rout-table-association" {
     route_table_id = aws_route_table.tikitu-route-table.id 
     subnet_id = aws_subnet.public-subnet.id
 }
-
