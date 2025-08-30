@@ -69,3 +69,12 @@ cidr
     Managed VPN service that enables secure remote access to AWS resources and on-premises networks using OpenVPN-based clients.
 
 
+
+### Variables
+
+1. Environment variables
+`export TF_VAR_aws_instance_type=t2.mincro`
+
+2. terraform.tfvars
+3. *.auto.tfvars
+4. -var , -var-file

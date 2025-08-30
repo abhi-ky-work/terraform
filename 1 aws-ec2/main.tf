@@ -9,7 +9,8 @@ terraform {
 
 provider "aws" {
   # Configuration options
-  region = var.region
+  # "eu-north-1"
+  region = var.region 
 }
 
 resource "aws_instance" "tikitu" {
