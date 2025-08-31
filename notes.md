@@ -5,6 +5,8 @@ terraform apply
 terraform destroy
 
 
+### interpolation
+-> getting the value of a terraform resource block created
 
 ### outputs : 
 resource : https://www.youtube.com/watch?v=VCAhujFE_7w&list=PL0tP8lerTbX3jYgiu3PEJAMuaIr64ZSpk&index=13
